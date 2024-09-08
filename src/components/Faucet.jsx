@@ -5,15 +5,15 @@ import faucetImage from '../assets/home1.jpg';
 const Faucet = ({ selectedImage }) => {
   return (
     <div className="relative">
-      {/* صورة الحنفية الأساسية */}
-      <img src={faucetImage} alt="Faucet" className="w-100 h-100" />
+      {/* صورة الحنفية الأساسية بحجمها الطبيعي */}
+      <img src={faucetImage} alt="Faucet" className="m-auto" style={{ display: '', maxWidth: '100%', height: 'auto' }} />
       
-      {/* الصورة المختارة من قبل المستخدم وتكون في المنتصف */}
+      {/* الصورة المختارة من قبل المستخدم وتكون في المنتصف بحجمها الطبيعي */}
       <img 
         src={selectedImage} 
         alt="Selected" 
-        className="absolute inset-0 w-100 h-100 object-contain m-auto" 
-        style={{ top: '55%', left: '40%', transform: 'translate(-50%, -50%)' }}
+        className="absolute object-cover" 
+        style={{ top: '45%', left: '50%', transform: 'translate(-50%, -50%)', maxWidth: '90%', height: 'auto' }}
       />
     </div>
   );
