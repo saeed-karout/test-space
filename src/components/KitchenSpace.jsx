@@ -31,7 +31,7 @@ const Faucet = () => {
 
         {/* خيارات الصور عبر div مع ألوان قابلة للنقر */}
         <div className="flex flex-col space-y-4 mt-2 items-center">
-        <label className=" mx-auto font-bold text-white">Select Items:</label>
+        <label className=" mx-auto font-bold text-black">Select Items:</label>
           <div
             onClick={() => setSelectedImage(image1)}
             className="w-12 h-12 rounded-full cursor-pointer"
